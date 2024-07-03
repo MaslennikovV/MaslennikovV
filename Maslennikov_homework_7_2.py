@@ -1,0 +1,7 @@
+print ('Сколько чисел будем вводить?: ')
+n = int(input())
+print (f'Введите {n} чисел через пробел: ')
+spisok = list(map(int, input().split()))
+spisok.insert(0, spisok[-1])
+spisok.pop()
+print(spisok)
